@@ -2561,8 +2561,8 @@ ol {
 -----------------------*/
 
 .blog {
-	padding-top: 70px;
-	padding-bottom: 80px;
+	/* padding-top: 70px;
+	padding-bottom: 80px; */
 }
 
 .blog__item {

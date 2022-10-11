@@ -28,6 +28,7 @@ add_action('wp_enqueue_scripts', 'sumotop_styles');
 
 function sumotop_setup_theme()
 {
+    register_nav_menu('headerMenuLocation', 'Header Menu Location');
     add_theme_support('title-tag');
 }
 

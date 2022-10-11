@@ -2,22 +2,19 @@
 <html lang="vi">
 
 <head>
-    <?php wp_head(); ?>
-
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset') ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ashion Template">
     <meta name="keywords" content="Ashion, unica, creative, html">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <?php wp_head(); ?>
 </head>
 
-<body>
-
+<body <?php body_class() ?>>
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
     </div>
-
     <!-- Offcanvas Menu Begin -->
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
@@ -52,6 +49,8 @@
                 </div>
                 <div class="col-xl-6 col-lg-7">
                     <nav class="header__menu">
+                        <?php wp_nav_menu(['theme_location' => 'headerMenuLocation']); ?>
+                        <?php /*
                         <ul>
                             <li class="active"><a href="<?= site_url() ?>">Home</a></li>
                             <li><a href="#">Women’s</a></li>
@@ -68,6 +67,7 @@
                             <li><a href="./blog.html">Blog</a></li>
                             <li><a href="./contact.html">Contact</a></li>
                         </ul>
+                        */ ?>
                     </nav>
                 </div>
                 <div class="col-lg-3">
